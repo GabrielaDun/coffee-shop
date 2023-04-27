@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pizzeria</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,300i,700%7COswald:300,500,700&amp;subset=latin-ext" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Coffee Shop</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
+    <body>
+        <div id="pages">
+            <section id="home">
+                <div class="home-wrapper container"></div>
+              </section>
+            <section id="product">
+              <div id="product-list" class="product-list container"></div>
+            </section>
+            <section id="contact">
+              <div class="contact-wrapper container"></div>
+            </section>
+        </div>
+        <header class="nav-splash">
+            <nav class="navigation container">
+                <div class="logo">
+                    <h2>EL TIGRE</h2>
+                    <p>VENEZUELA COFFEE BEANS</p>
+                </div>
+                <div class = "navi">
+                    <ul>
+                        <li> <a href="#home">HOME</a></li>
+                        <li> <a href="#product">PRODUCTS</a></li>
+                        <li> <a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="splash container">
+                <div class = "splash-inner">
+                    <div class="page-title-one">
+                        <h1>HOME OF</h1>
+                    </div>  
+                    <div class="page-title-two">
+                        <h1>ORGINAL TASTES</h1>
+                    </div>
+                    <div class="splash-discover">
+                        <div class="splash-discover-text">
+                            <h5>DISCOVER</h5>
+                        </div>
+                        <div class="splash-discover-icone">
+                            <i class="fa-solid fa-circle-arrow-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script id="template-about" type="text/x-handlebars-template">
+            <div class="about-us">
+                <div class = "about-us-inner container">
+                    <div class="about-us-inner-title">
+                        <h2 class="section-header about-header">ABOUT US</h2>
+                    </div>  
+                    <p class="about-us-story">Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something orginal. </p>
+                    <p class="about-us-story">Our coffee reflecs us - young, wild and free. We are on the journey of new tasts...</p>
+                    <p class="about-us-inner-join"> Join us</p>
+                </div>
+            </div>
+        </script>
+        <script id="template-contact" type="text/x-handlebars-template">
+            <div class="contact-widget">
+                <div class="contact-widget-inner container">
+                    <h2 class="section-header contact-header">CONTACT US</h2>
+                    <form class="contact-form">
+                        <div class="field-wrap">
+                            <p>NAME</p>
+                            <input name="firstName"  required type="text">
+                        </div>
+                        <div class="field-wrap">
+                            <p>TITLE</p>
+                            <input name="title" required type="text">
+                        </div>
+                        <div class="field-wrap field-wrap-message">
+                            <p>MESSAGE</p>
+                            <input class="message-cell" required type="text">
+                        </div>
+                        <a href = "#" class = "btn" type="submit">SUBMIT</a>
+                    </form>
+                </div>
+            </div>
+        </script>
+        <footer class="page-footer">
+            <p>© 2021 EL TIGRE inc.</p>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    </body>
 </html>
 

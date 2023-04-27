@@ -1,0 +1,123 @@
+/*Header*/
+
+/*Navigation and Splash*/
+
+.nav-splash {
+    background: url('/images/background.png') rgba(0, 0, 0, .65);
+    background-blend-mode: darken;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    font-family: $font-header;
+
+    .navigation {
+        padding: 12px 0;
+        letter-spacing: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .logo {
+            color: $color-light;
+            p {
+                position: relative;
+                bottom: 20px;
+                font-size:12px;
+            }
+        }
+        .navi {
+            color: $color-main;
+            ul {
+
+                list-style-type: none;
+            }
+            li {
+                display: inline-block;
+                margin: 0 36px 0 0 ;
+                position: relative;
+                font-size: 12px;
+                letter-spacing: 3px;
+                a {
+                    text-decoration: none;
+                    color: $color-main;
+                }
+            }
+        }
+    }
+
+    .splash {
+        color: $color-main;
+        min-height: 400px;
+        letter-spacing: 10px;
+    
+        .splash-inner {
+            width: 100%;
+    
+            .page-title-one {
+                font-size: 28px;
+                position: relative;
+                left: 0px;
+            }
+
+            .page-title-two {
+                font-size: 28px;
+                left: 200px;
+                bottom: 80px;
+                position: relative;
+               
+            }
+            .page-title-two::after {
+                position: absolute;
+                content: '';
+                bottom: -24px;
+                left: 200px;
+                width: 180px;
+                height: 5px;
+                transform: translateX(-50%);
+                background: $color-main;
+            }
+        }
+        .splash-discover {
+            font-size: 22px;
+            letter-spacing: 5px;
+            color: $color-light; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-icone {
+                position: relative;
+                bottom: 20px;
+            }
+        }
+    }
+} 
+
+.about-us {
+    background: url('/images/about-us.jpg')  rgba(0, 0, 0, .65);
+    background-blend-mode: darken;
+    background-position: center center;
+    background-size: cover;
+    height: 450px;
+
+    .about-header::after{
+        position: absolute;
+        content: '';
+        width: 400px;
+        height: 4px;
+        top: 70px;        
+        left: 0;
+        background: $color-main;
+    }
+    .about-us-inner {
+        width: 30%;
+        font-weight: 600;
+        font-size: 16px;
+        color: $color-light;
+        .about-us-story {
+            text-align: left;
+        }
+        .about-us-inner-join{
+            text-align: right;
+        }
+    }
+}
+

@@ -1,0 +1,38 @@
+.contact-widget {
+    background-color: $color-light;
+
+    &-title {
+        color: $color-main;
+    }
+
+    .contact-header::after {
+        position: absolute;
+        content: '';
+        width: 400px;
+        height: 4px;
+        top: 65px;
+        left: 20%;
+        background: $color-main;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            text-align: center;
+            line-height: 0.8;
+        }
+        input {
+            padding: 5px;
+            margin: 5px auto 0 auto;
+            width: 250px;
+            height: 30px;
+            font-size: 12px;
+        }
+        
+        .message-cell {
+            height: 100px;
+            text-align: top left;
+        }
+    }
+}
