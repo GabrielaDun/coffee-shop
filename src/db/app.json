@@ -1,0 +1,25 @@
+{
+    "events": [
+        {
+          "id": 1,
+          "name": " csno",
+          "description": "blnhwo",
+          "roasting": "3/10",
+          "intensity": "7/10"
+        },
+        {
+            "id": 2,
+            "name": " csbiuhno",
+            "description": "blnhwo",
+            "roasting": "4/10",
+            "intensity": "9/10"
+        },
+        {
+            "id": 3,
+            "name": " csnoviyuhb",
+            "description": "blnhwo",
+            "roasting": "5/10",
+            "intensity": "8/10"
+        }
+      ]
+}

@@ -11,7 +11,7 @@ body {
   .container {
     max-width: 700px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
   }
 
 .page-footer {
@@ -30,15 +30,6 @@ body {
     text-align: center;
     position: relative;
   
-    &::after {
-      position: absolute;
-      content: '';
-      width: 400px;
-      height: 4px;
-      top: 65px;
-      left: 20%;
-      background: $color-main;
-  }
 }
 .btn {
   display: inline-block;

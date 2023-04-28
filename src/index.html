@@ -27,7 +27,7 @@
                     <h2>EL TIGRE</h2>
                     <p>VENEZUELA COFFEE BEANS</p>
                 </div>
-                <div class = "navi">
+                <div class="navi">
                     <ul>
                         <li> <a href="#home">HOME</a></li>
                         <li> <a href="#product">PRODUCTS</a></li>
@@ -36,10 +36,10 @@
                 </div>
             </nav>
             <div class="splash container">
-                <div class = "splash-inner">
+                <div class="splash-inner">
                     <div class="page-title-one">
                         <h1>HOME OF</h1>
-                    </div>  
+                    </div>
                     <div class="page-title-two">
                         <h1>ORGINAL TASTES</h1>
                     </div>
@@ -54,6 +54,41 @@
                 </div>
             </div>
         </header>
+
+        <script id="template-product-widget" type="text/x-handlebars-template">
+            <div class = "product-section">
+                <div class="product-section-inner container">
+                    <header class="product-section-text">
+                        <h2 class="section-header contact-header">PRODUCTS</h2>
+                    </header>
+                    <div class="product-row container">
+                        <div class="product-text">
+                            <h3 class = "product-text-title">
+                            {{number}} {{name}}
+                            </h3>
+                            <p class = "product-text-description">
+                            {{}}
+                            </p>
+                            <div class = "product-text-features">
+                                <div class="product-text-features-desc">
+                                    ROASTING: 
+                                </div>
+                                <div class="product-text-features-rating">
+                                    5/10
+                                </div>
+                            </div>
+                            <div class = "product-text-budgets">
+
+                            </div>
+                        </div>
+                        <div class = "product-image">
+                            <img src="/images/coffee-1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
         <script id="template-about" type="text/x-handlebars-template">
             <div class="about-us">
                 <div class = "about-us-inner container">
@@ -66,6 +101,7 @@
                 </div>
             </div>
         </script>
+
         <script id="template-contact" type="text/x-handlebars-template">
             <div class="contact-widget">
                 <div class="contact-widget-inner container">
@@ -88,11 +124,13 @@
                 </div>
             </div>
         </script>
+
         <footer class="page-footer">
             <p>© 2021 EL TIGRE inc.</p>
         </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+        <script src="js/app.js" type="module"></script>
     </body>
 </html>
 
