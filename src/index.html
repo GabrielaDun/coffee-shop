@@ -10,17 +10,6 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div id="pages">
-            <section id="home">
-                <div class="home-wrapper container"></div>
-              </section>
-            <section id="product">
-              <div id="product-list" class="product-list container"></div>
-            </section>
-            <section id="contact">
-              <div class="contact-wrapper container"></div>
-            </section>
-        </div>
         <header class="nav-splash">
             <nav class="navigation container">
                 <div class="logo">
@@ -54,35 +43,43 @@
                 </div>
             </div>
         </header>
+        <div id="pages">
+            <section id="home">
+                <div class="home-wrapper container"></div>
+              </section>
+            <section id="product">
+              <div id="product-list" class="product-list container"></div>
+            </section>
+            <section id="contact">
+              <div class="contact-wrapper container"></div>
+            </section>
+        </div>
 
         <script id="template-product-widget" type="text/x-handlebars-template">
-            <div class = "product-section">
+            <div class = "product-section" id="{{{id}}}">
                 <div class="product-section-inner container">
-                    <header class="product-section-text">
-                        <h2 class="section-header contact-header">PRODUCTS</h2>
-                    </header>
                     <div class="product-row container">
                         <div class="product-text">
                             <h3 class = "product-text-title">
-                            {{number}} {{name}}
+                            {{{id}}}. {{{name}}}
                             </h3>
                             <p class = "product-text-description">
-                            {{}}
+                            {{{description}}}
                             </p>
                             <div class = "product-text-features">
                                 <div class="product-text-features-desc">
-                                    ROASTING: 
+                                    ROASTING: {{{roasting}}}
                                 </div>
                                 <div class="product-text-features-rating">
-                                    5/10
+                                    INTENSITY: {{{intensity}}}
                                 </div>
                             </div>
                             <div class = "product-text-budgets">
 
                             </div>
                         </div>
-                        <div class = "product-image">
-                            <img src="/images/coffee-1.png">
+                        <div class = "product-image" id="{{{id}}}">
+                            <img src="{{{image}}}">
                         </div>
                     </div>
                 </div>

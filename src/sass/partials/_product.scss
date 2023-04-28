@@ -11,6 +11,7 @@
 
     .product-text{
         flex: 1;
+        padding-left: 10px;
         &-title{
             font-size: 24px;
             letter-spacing: 4px;
@@ -46,6 +47,11 @@
         height: 100%;
         flex: 1;
         object-fit: cover;
+        padding-right: 10px;
+        
+        &.active {
+            order:-1;
+        }
 
         img {
             width: 100%;

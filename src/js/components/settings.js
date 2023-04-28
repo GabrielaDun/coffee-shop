@@ -1,7 +1,8 @@
 export const select = {
     templateOf: {
       homeWidget: '#template-home-widget',
-      productWidget: '#template-product-widget'
+      productWidget: '#template-product-widget',
+      aboutWidget: '#template-about'
     },
     containerOf: {
       menu: '#product-list',
@@ -14,11 +15,8 @@ export const select = {
       menuProductsActive: '#product-list > .product.active',
       formInputs: 'input, select',
     },
-    menuProduct: {
-      clickable: '.product__header',
-      form: '.product__order',
-      priceElem: '.product__total-price .price',
-      cartButton: '[href="#add-to-cart"]',
+    product: {
+      evenNumberProduct: '.product-image '
     },
     nav: {
       links: '.main-nav a',
@@ -27,9 +25,11 @@ export const select = {
   };
   
   export const classNames = {
+    evenNumberProduct: 'active',
+
     menuProduct: {
       wrapperActive: 'active',
-      imageVisible: 'active',
+      evenNumberProduct: 'active',
     },
     pages: {
       active: 'active',
@@ -45,6 +45,7 @@ export const select = {
   
   export const templates = {
     menuProduct: Handlebars.compile(document.querySelector(select.templateOf.productWidget).innerHTML),
+    aboutSection: Handlebars.compile(document.querySelector(select.templateOf.aboutWidget).innerHTML),
   };
   
   

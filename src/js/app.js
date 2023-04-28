@@ -9,7 +9,7 @@ const app = {
     thisApp.initData();
     thisApp.initPages();
     //thisApp.initHome();
-    //thisApp.initProducts();
+    thisApp.initProducts();
     console.log('hey!', thisApp.data);
   },
 
@@ -18,7 +18,6 @@ const app = {
 
     thisApp.data = {};
     const url = settings.db.url + '/' + settings.db.products;
-    console.log(url);
 
     fetch(url)
       .then(function(rawResponse){
@@ -31,10 +30,9 @@ const app = {
         thisApp.data.products = parsedResponse;
         console.log(thisApp.data.products);
         // execute initMenu method
-        thisApp.initMenu();
+        thisApp.initProducts();
 
       });
-      console.log(thisApp.data.products);
   },
   initHome: function(){
     const thisApp = this;
@@ -57,6 +55,7 @@ const app = {
 
   initProducts: function() {
     const thisApp = this;
+    console.log(thisApp.data.products);
 
     for (let productData in thisApp.data.products){
       new Product(thisApp.data.products[productData].id, thisApp.data.products[productData]);
