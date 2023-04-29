@@ -26,20 +26,16 @@
         }
         .navi {
             color: $color-main;
-            ul {
-
-                list-style-type: none;
-            }
-            li {
+            list-style-type: none;
+            
+            a {
                 display: inline-block;
                 margin: 0 36px 0 0 ;
                 position: relative;
                 font-size: 12px;
                 letter-spacing: 3px;
-                a {
-                    text-decoration: none;
-                    color: $color-main;
-                }
+                text-decoration: none;
+                color: $color-main;
             }
         }
     }
@@ -90,34 +86,3 @@
         }
     }
 } 
-
-.about-us {
-    background: url('/images/about-us.jpg')  rgba(0, 0, 0, .65);
-    background-blend-mode: darken;
-    background-position: center center;
-    background-size: cover;
-    height: 450px;
-
-    .about-header::after{
-        position: absolute;
-        content: '';
-        width: 400px;
-        height: 4px;
-        top: 70px;        
-        left: 0;
-        background: $color-main;
-    }
-    .about-us-inner {
-        width: 30%;
-        font-weight: 600;
-        font-size: 16px;
-        color: $color-light;
-        .about-us-story {
-            text-align: left;
-        }
-        .about-us-inner-join{
-            text-align: right;
-        }
-    }
-}
-

@@ -2,13 +2,15 @@ export const select = {
     templateOf: {
       homeWidget: '#template-home-widget',
       productWidget: '#template-product-widget',
-      aboutWidget: '#template-about'
+      aboutWidget: '#template-about',
+      contactWidget: '#template-contact'
     },
     containerOf: {
-      menu: '#product-list',
-      cart: '#cart',
+      menu: '.product-wrapper',
       pages: '#pages',
       home: '.home-wrapper',
+      contact: '.contact-wrapper',
+      about: '.about-wrapper',
     },
     all: {
       menuProducts: '#product-list > .product',
@@ -45,7 +47,8 @@ export const select = {
   
   export const templates = {
     menuProduct: Handlebars.compile(document.querySelector(select.templateOf.productWidget).innerHTML),
-    aboutSection: Handlebars.compile(document.querySelector(select.templateOf.aboutWidget).innerHTML),
+    contactSection: Handlebars.compile(document.querySelector(select.templateOf.contactWidget).innerHTML),
+    aboutSection: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML),
   };
   
   

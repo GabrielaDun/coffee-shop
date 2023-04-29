@@ -1,5 +1,7 @@
 import {select, classNames, settings} from './components/settings.js';
 import Product from './components/Product.js';
+import Contact from './components/Contact.js';
+import Home from './components/Home.js';
 
 const app = {
 
@@ -8,8 +10,9 @@ const app = {
 
     thisApp.initData();
     thisApp.initPages();
-    //thisApp.initHome();
+    thisApp.initContact();
     thisApp.initProducts();
+    thisApp.initHome();
     console.log('hey!', thisApp.data);
   },
 
@@ -43,14 +46,18 @@ const app = {
   activatePage: function(pageId){
     const thisApp = this;
     for(let page of thisApp.pages){
+      console.log(pageId);
+      console.log(page.id);
+      console.log(page);
       page.classList.toggle(classNames.pages.active, page.id == pageId);
     }
-    for(let link of thisApp.navLinks){
+    // code to make clicked links bold
+    /*for(let link of thisApp.navLinks){
       link.classList.toggle(
         classNames.nav.active, 
         link.getAttribute('href') == '#' + pageId
       );
-    }
+    }*/
   },
 
   initProducts: function() {
@@ -83,11 +90,25 @@ const app = {
         event.preventDefault();
 
         const id = clickedElement.getAttribute('href').replace('#', '');
+        console.log(id);
         thisApp.activatePage(id);
         window.location.hash = '#/' + id;
 
       });
     }
+  },
+
+  initContact: function() {
+    const thisApp = this;
+    const contactElem = document.querySelector(select.containerOf.contact);
+    thisApp.contact = new Contact (contactElem);
+    
+  },
+  initHome: function() {
+    const thisApp = this;
+    const homeElem = document.querySelector(select.containerOf.home);
+    thisApp.contact = new Home (homeElem);
+    
   },
 };
 

@@ -8,7 +8,6 @@ class Product{
     console.log(data);
 
     thisProduct.renderInMenu();
-    //thisProduct.getElements();
   }
   renderInMenu(){
     const thisProduct = this;
@@ -20,24 +19,32 @@ class Product{
     };
 
 
-    const generatedHTMLForAboutSection = templates.menuProduct(thisProduct.data);
-    thisProduct.element = createDOMFromHTML(generatedHTMLForAboutSection);
+    const generatedHTMLForProductSection = templates.menuProduct(thisProduct.data);
+    thisProduct.element = createDOMFromHTML(generatedHTMLForProductSection);
 
     const menuContainer = document.querySelector(select.containerOf.menu);
-    menuContainer.appendChild(thisProduct.element);
-
     console.log(menuContainer);
+    menuContainer.appendChild(thisProduct.element);
+    thisProduct.imageSideSelect();
+
+    const generatedHTMLForHome = templates.menuProduct(thisProduct.data);
+    thisProduct.element = createDOMFromHTML(generatedHTMLForHome);
+    const homeproductContainer = document.querySelector(select.containerOf.home);
+    console.log(homeproductContainer);
+    homeproductContainer.appendChild(thisProduct.element);
+
     thisProduct.imageSideSelect();
 
   }
 
   imageSideSelect(){
     const thisProduct = this;
-    const imagesContainer = thisProduct.element.querySelector(select.product.evenNumberProduct);
-    if (thisProduct.data.id % 2 == 0){
+    const imagesContainer = thisProduct.element.querySelectorAll(select.product.evenNumberProduct);
+    console.log(imagesContainer);
+    /*if (thisProduct.data.id % 2 == 0){
       console.log('parzysta')
       imagesContainer.classList.add(classNames.evenNumberProduct);
-    }
+    }*/
 
 
   }

@@ -16,12 +16,10 @@
                     <h2>EL TIGRE</h2>
                     <p>VENEZUELA COFFEE BEANS</p>
                 </div>
-                <div class="navi">
-                    <ul>
-                        <li> <a href="#home">HOME</a></li>
-                        <li> <a href="#product">PRODUCTS</a></li>
-                        <li> <a href="#contact">CONTACT</a></li>
-                    </ul>
+                <div class="navi main-nav">
+                    <a href="#home">HOME</a>
+                    <a href="#product">PRODUCTS</a>
+                    <a href="#contact">CONTACT</a>
                 </div>
             </nav>
             <div class="splash container">
@@ -44,13 +42,14 @@
             </div>
         </header>
         <div id="pages">
-            <section id="home">
-                <div class="home-wrapper container"></div>
-              </section>
-            <section id="product">
-              <div id="product-list" class="product-list container"></div>
+            <section id="home" class="home-component">
+                <div id="product-list" class="home-wrapper container"></div>
+                <div class="about-wrapper"></div>
             </section>
-            <section id="contact">
+            <section id="product"  class="product-component">
+              <div id="product-list" class="product-wrapper container"></div>
+            </section>
+            <section id="contact" class="contact-component">
               <div class="contact-wrapper container"></div>
             </section>
         </div>
@@ -67,11 +66,21 @@
                             {{{description}}}
                             </p>
                             <div class = "product-text-features">
-                                <div class="product-text-features-desc">
-                                    ROASTING: {{{roasting}}}
+                                <div class="product-text-features-row">
+                                    <div class="product-text-features-desc">
+                                        ROASTING: &nbsp;
+                                    </div>
+                                    <div class="product-text-features-rating">
+                                        {{{roasting}}}
+                                    </div>
                                 </div>
-                                <div class="product-text-features-rating">
-                                    INTENSITY: {{{intensity}}}
+                                <div class="product-text-features-row">
+                                    <div class="product-text-features-desc">
+                                        INTENSITY:&nbsp;
+                                    </div>
+                                    <div class="product-text-features-rating">
+                                        {{{intensity}}}
+                                    </div>
                                 </div>
                             </div>
                             <div class = "product-text-budgets">
@@ -86,7 +95,7 @@
             </div>
         </script>
 
-        <script id="template-about" type="text/x-handlebars-template">
+        <script id="template-home-widget" type="text/x-handlebars-template">
             <div class="about-us">
                 <div class = "about-us-inner container">
                     <div class="about-us-inner-title">
