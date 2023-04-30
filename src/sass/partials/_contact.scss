@@ -14,7 +14,7 @@
                 content: '';
                 width: 400px;
                 height: 4px;
-                top: 65px;
+                top: 90px;
                 left: 20%;
                 background: $color-main;
             }
@@ -28,15 +28,12 @@
                 }
                 input {
                     padding: 5px;
-                    margin: 5px auto 0 auto;
                     width: 250px;
                     height: 30px;
-                    font-size: 12px;
                 }
                 
                 .message-cell {
-                    height: 100px;
-                    text-align: top left;
+                    height: 80px;
                 }
             }
         }

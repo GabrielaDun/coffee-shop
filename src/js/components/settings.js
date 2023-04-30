@@ -18,7 +18,9 @@ export const select = {
       formInputs: 'input, select',
     },
     product: {
-      evenNumberProduct: '.product-image '
+      evenNumberProduct: '.product-image ',
+      evenNumberHome: '.home-wrapper .product-image ',
+      evenNumberPro: '.product-wrapper .product-image ',
     },
     nav: {
       links: '.main-nav a',
@@ -34,6 +36,9 @@ export const select = {
       evenNumberProduct: 'active',
     },
     pages: {
+      active: 'active',
+    }, 
+    nav: {
       active: 'active',
     }
   };

@@ -43,11 +43,13 @@
         </header>
         <div id="pages">
             <section id="home" class="home-component">
+                <h2 class="section-header product-header">PRODUCTS</h2>
                 <div id="product-list" class="home-wrapper container"></div>
                 <div class="about-wrapper"></div>
             </section>
             <section id="product"  class="product-component">
-              <div id="product-list" class="product-wrapper container"></div>
+                <h2 class="section-header product-header">PRODUCTS</h2>
+              <div class="product-wrapper container"></div>
             </section>
             <section id="contact" class="contact-component">
               <div class="contact-wrapper container"></div>
@@ -87,7 +89,9 @@
 
                             </div>
                         </div>
-                        <div class = "product-image" id="{{{id}}}">
+                        <div class = "product-image {{{name}}}" id="{{{id}}}">
+                            <div class = 'new-price'>{{{new-price}}}</div>
+                            <div class = 'old-price'>{{{old-price}}}</div>
                             <img src="{{{image}}}">
                         </div>
                     </div>

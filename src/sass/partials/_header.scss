@@ -1,6 +1,4 @@
-/*Header*/
-
-/*Navigation and Splash*/
+/*Header navigation and splash */
 
 .nav-splash {
     background: url('/images/background.png') rgba(0, 0, 0, .65);
@@ -9,12 +7,12 @@
     background-position: center center;
     background-size: cover;
     font-family: $font-header;
+    color: $color-main;
 
     .navigation {
         padding: 12px 0;
         letter-spacing: 5px;
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         .logo {
             color: $color-light;
@@ -24,38 +22,31 @@
                 font-size:12px;
             }
         }
-        .navi {
+        .navi a {
+            margin: 0 24px 0 0 ;
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-decoration: none;
             color: $color-main;
-            list-style-type: none;
-            
-            a {
-                display: inline-block;
-                margin: 0 36px 0 0 ;
-                position: relative;
-                font-size: 12px;
-                letter-spacing: 3px;
-                text-decoration: none;
-                color: $color-main;
+            font-weight: 500;
+            &.active {
+                font-weight: 900;
             }
         }
     }
 
     .splash {
-        color: $color-main;
-        min-height: 400px;
         letter-spacing: 10px;
-    
+
         .splash-inner {
-            width: 100%;
-    
+            font-size: 28px;
+
             .page-title-one {
-                font-size: 28px;
                 position: relative;
                 left: 0px;
             }
 
             .page-title-two {
-                font-size: 28px;
                 left: 200px;
                 bottom: 80px;
                 position: relative;

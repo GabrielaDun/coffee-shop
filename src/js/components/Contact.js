@@ -3,6 +3,7 @@ import {select, templates} from './settings.js';
 class Contact {
     constructor(){
       const thisContact = this;
+
       thisContact.renderContact();
     }
     renderContact(){
@@ -13,7 +14,6 @@ class Contact {
         div.innerHTML = htmlString.trim();
         return div.firstChild;
       };
-      console.log('tak');
   
       const generatedHTMLForContactSection = templates.contactSection();
       thisContact.contact = createDOMFromHTML(generatedHTMLForContactSection);

@@ -1,4 +1,4 @@
-import {select, classNames, templates} from './settings.js';
+import {select, templates} from './settings.js';
 
 class Product{
   constructor(id, data){
@@ -9,6 +9,7 @@ class Product{
 
     thisProduct.renderInMenu();
   }
+
   renderInMenu(){
     const thisProduct = this;
 
@@ -18,34 +19,19 @@ class Product{
       return div.firstChild;
     };
 
-
+    
+    /* Generate product sectiion in product page */
     const generatedHTMLForProductSection = templates.menuProduct(thisProduct.data);
     thisProduct.element = createDOMFromHTML(generatedHTMLForProductSection);
-
     const menuContainer = document.querySelector(select.containerOf.menu);
-    console.log(menuContainer);
     menuContainer.appendChild(thisProduct.element);
-    thisProduct.imageSideSelect();
 
+
+    /* Generate product sectiion in home page */
     const generatedHTMLForHome = templates.menuProduct(thisProduct.data);
     thisProduct.element = createDOMFromHTML(generatedHTMLForHome);
     const homeproductContainer = document.querySelector(select.containerOf.home);
-    console.log(homeproductContainer);
     homeproductContainer.appendChild(thisProduct.element);
-
-    thisProduct.imageSideSelect();
-
-  }
-
-  imageSideSelect(){
-    const thisProduct = this;
-    const imagesContainer = thisProduct.element.querySelectorAll(select.product.evenNumberProduct);
-    console.log(imagesContainer);
-    /*if (thisProduct.data.id % 2 == 0){
-      console.log('parzysta')
-      imagesContainer.classList.add(classNames.evenNumberProduct);
-    }*/
-
 
   }
 

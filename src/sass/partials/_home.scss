@@ -61,7 +61,7 @@
                 object-fit: cover;
                 padding-right: 10px;
                 
-                &.active {
+                &.TIGRE {
                     order:-1;
                 }
         
@@ -89,14 +89,14 @@
         content: '';
         width: 400px;
         height: 4px;
-        top: 70px;        
+        top: 85px;        
         left: 0;
         background: $color-main;
     }
     .about-us-inner {
-        width: 30%;
+        width: 28%;
         font-weight: 600;
-        font-size: 16px;
+        letter-spacing: 1.5px;
         color: $color-light;
         .about-us-story {
             text-align: left;
