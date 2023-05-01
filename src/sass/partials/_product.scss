@@ -1,13 +1,4 @@
 
-.home-component{
-    display: none;
-    &.active {
-        display: inline;
-        background-color: blue;
-        
-    }
-}
-
 .product-header::after{
     position: absolute;
     content: '';
@@ -18,7 +9,7 @@
     background: $color-main;
 }
 
-.product-component{
+.product-component, .product-component{
     display: none;
     &.active {
         display: inline;
@@ -47,7 +38,7 @@
                     content: '';
                     width: 50px;
                     height: 2px;
-                    top: 40%;
+                    top: 20%;
                     background: $color-main;
                 }
                 &-features {
@@ -94,7 +85,7 @@
                     position: relative;  
                     color: $color-light;
                     top: 30px;
-                    left: 245px;
+                    left: 350px;
                     text-decoration: line-through;                   
                     font-weight: 900px;
                     font-size: 12px;
@@ -103,7 +94,7 @@
                     position: relative;  
                     color: $color-light;
                     top: 75px;
-                    left: 265px;               
+                    left: 350px;              
                     font-weight: 900px;
                     font-size: 20px;
                 }

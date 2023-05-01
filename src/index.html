@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./vendor/flickity.css" media="screen">
     </head>
     <body>
         <header class="nav-splash">
@@ -90,9 +91,9 @@
                             </div>
                         </div>
                         <div class = "product-image {{{name}}}" id="{{{id}}}">
-                            <div class = 'new-price'>{{{new-price}}}</div>
-                            <div class = 'old-price'>{{{old-price}}}</div>
-                            <img src="{{{image}}}">
+                            <div class ="new-price">{{{new-price}}}</div>
+                            <div class ="old-price">{{{old-price}}}</div>
+                            <img src="{{{image}}}" alt="Best Venesualan coffee with delivery to your home.">
                         </div>
                     </div>
                 </div>
@@ -101,15 +102,40 @@
 
         <script id="template-home-widget" type="text/x-handlebars-template">
             <div class="about-us">
-                <div class = "about-us-inner container">
-                    <div class="about-us-inner-title">
-                        <h2 class="section-header about-header">ABOUT US</h2>
-                    </div>  
-                    <p class="about-us-story">Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something orginal. </p>
-                    <p class="about-us-story">Our coffee reflecs us - young, wild and free. We are on the journey of new tasts...</p>
-                    <p class="about-us-inner-join"> Join us</p>
+                <div class="about-us-inner-title">
+                    <h2 class="section-header about-header">ABOUT US</h2>
+                </div>  
+                <div class="home-slider container">
+                    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                        <div class="caurousel-cell">
+                            <div class = "main-carousel-image">
+                                <img src="images/coffee-3.png">
+                            </div>
+                            <div class = "main-carousel-text">
+                                <h4> Elizabeth <span>Doherty</span></h4>
+                                <p> Experienced barista from Bahamas. She says that Venezuela has opned her eyes on coffee. It"s not about the taste", she says "it's about the feelings."</p>
+                            </div>
+                        </div>
+                        <div class="caurousel-cell">
+                            <div class = "main-carousel-image">
+                                <img src="images/coffee-3.png">
+                            </div>
+                            <div class = "main-carousel-text">
+                                <h4>Max <span>Selfish</span></h4>
+                                <p> Max is the austrian barista with years of experience from the hotels across the whole Europe. "Trying Venezuelan coffee was a shock for me! I have never drank such an amazing coffee!, he says. </p>
+                            </div>
+                        </div>
+                        <div class="caurousel-cell">
+                            <div class = "main-carousel-image">
+                                <img src="images/coffee-3.png">
+                            </div>
+                            <div class = "main-carousel-text">
+                                <h4>Ping <span>Nihao</span></h4>
+                                <p>Ping is the youngest in the team. He doesn't like calling coffe a mysterios act. He says, a good coffee is like a mathematical formula. Once you figure it out, every coffee you make will be a masterpiece.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </script>
 
         <script id="template-contact" type="text/x-handlebars-template">
@@ -141,6 +167,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
         <script src="js/app.js" type="module"></script>
+        <script src="./vendor/flickity.js"></script>
     </body>
 </html>
 
