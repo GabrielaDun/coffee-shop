@@ -26,6 +26,8 @@ export const select = {
       links: '.main-nav a',
     },
     
+    header: '.page-title-main',
+    
   };
   
   export const classNames = {

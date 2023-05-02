@@ -1,0 +1,28 @@
+/*Media*/
+
+@media (max-width: 757px) {
+    .page-title {
+        font-size: 42px;
+    }
+    .page-subtitle {
+        font-size: 18px;
+    }
+    .section-title {
+        font-size: 24px;
+        padding: 15px 0 0 20px;
+    }
+    .all-services {
+        flex-direction: column;
+    }
+    .services-description {
+        width: 100%;
+    }
+    .work-row {
+        flex-direction: column;
+    }
+    .contact .container {
+        flex-direction: column;
+        padding: 10px 10px 40px 30px;
+    }
+}
+

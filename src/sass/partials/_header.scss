@@ -10,7 +10,7 @@
     color: $color-main;
 
     .navigation {
-        padding: 12px 0;
+        padding: 25px ;
         letter-spacing: 5px;
         display: flex;
         justify-content: space-between;
@@ -40,24 +40,34 @@
 
         .splash-inner {
             font-size: 28px;
-
-            .page-title-one {
-                position: relative;
-                left: 0px;
+            .page-title-main {
+                display: none;
+                &.active {
+                    display: block;
+                }
+                
+                &-one {
+                    position: relative;
+                    left: 15%;
+                    width: 600px;
+                }
+    
+                &-two {
+                    position: relative;
+                    right: -350px;
+                    bottom: 50px;
+                    width: 550px;
+                    }
+                   
             }
+        
 
-            .page-title-two {
-                left: 200px;
-                bottom: 50px;
-                position: relative;
-               
-            }
-            .page-title-two::after {
+            .page-title-main-one::after {
                 position: absolute;
                 content: '';
-                bottom: -24px;
-                left: 200px;
-                width: 180px;
+                bottom: -74px;
+                left: 350px;
+                width: 200px;
                 height: 5px;
                 transform: translateX(-50%);
                 background: $color-main;

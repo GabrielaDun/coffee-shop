@@ -2,6 +2,7 @@ import {select, classNames, settings} from './components/settings.js';
 import Product from './components/Product.js';
 import Contact from './components/Contact.js';
 import Home from './components/Home.js';
+import Header from './components/Header.js';
 
 const app = {
 
@@ -12,6 +13,7 @@ const app = {
     thisApp.initPages();
     thisApp.initContact();
     thisApp.initHome();
+    thisApp.initHeader();
   },
 
   initData: function(){
@@ -36,6 +38,12 @@ const app = {
     const thisApp = this;
     const homeElem = document.querySelector(select.containerOf.home);
     thisApp.home = new Home (homeElem);
+  },
+
+  initHeader: function(){
+    const thisApp = this;
+    const headerElem = document.querySelector(select.header);
+    thisApp.header = new Header (headerElem);
   },
   
   activatePage: function(pageId){
