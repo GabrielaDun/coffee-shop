@@ -2,10 +2,10 @@
 .product-header::after{
     position: absolute;
     content: '';
-    width: 35%;
-    height: 4px;
+    width: 50%;
+    height: 3px;
     top: 90px;        
-    left: 36%;
+    left: 24%;
     background: $color-main;
 }
 
@@ -38,7 +38,7 @@
                     content: '';
                     width: 50px;
                     height: 2px;
-                    top: 32%;
+                    top: 110px;
                     background: $color-main;
                 }
                 &-features {

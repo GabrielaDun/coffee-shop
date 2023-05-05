@@ -14,11 +14,6 @@ body {
     padding: 20px;
   }
 
-.page-footer {
-    text-align: center;
-    background-color: $color-light;
-    color: $color-dark;
-}
 
 .section-header {
     font-size: 32px;
@@ -43,4 +38,10 @@ body {
   text-align: center;
   background-position: 100% 0;
   font-size: 14px;
+}
+.page-footer {
+  text-align: center;
+  background-color: $color-light;
+  color: $color-dark;
+  font-size: 12px;
 }

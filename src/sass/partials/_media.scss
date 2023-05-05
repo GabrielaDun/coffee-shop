@@ -62,32 +62,30 @@
     }
 
     .product-header::after{
-        width: 65%;
-        height: 3px;
         top: 60px;        
         left: 16%;
     }
 
-    .product-component {
+    .product-component, .home-component{
         &.active {  
             .product-row {
                 .product-text{
                     padding-left: 2px;
                     &-title{
-                        font-size: 16px;
+                        font-size: 18px;
                         letter-spacing: 3px;
                     }
                     &::after {
-                        top: 70px;
+                        top: 40px;
                     }
-                    &-description{
-                        font-size: 10px;
-                        left: 0px;
+                    p {
+                        font-size: 12px;
+                        left: 1px;
                         bottom: 0px;
                         width: 85%;
                     }
                     &-features{
-                        font-size: 10px;
+                        font-size: 12px;
                     }
                 }
                 .product-image{
@@ -113,11 +111,27 @@
     }
     .page-footer {
         text-align: center;
-        font-size: 16px;
+        font-size: 10px;
         background-color: $color-light;
         color: $color-dark;
     }
-    
 
+    .contact-component {
+        &.active {
+            .contact-widget {
+                .contact-header::after {
+                    left: 20%;
+                    top: 60px;
+                }
+                .contact-form {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
 }
+
+
 
