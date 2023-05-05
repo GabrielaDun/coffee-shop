@@ -1,8 +1,72 @@
 /*Media*/
 
 @media (max-width: 757px) {
-    .page-title {
-        font-size: 42px;
+    .nav-splash {
+        .navigation {
+            .logo{
+                h2 {
+                    font-size: 16px;
+                    letter-spacing: 4px;
+                }
+                p {
+                    padding: 10px 0;
+                    font-size: 9px;
+                    letter-spacing: 3px;
+                }
+            }
+            .navi {
+                padding-top: 8px;
+                text-align: right;
+                display: flex;
+                flex-direction: column;
+                a {
+                    padding: 7px;
+                }
+            }
+        }
+        .splash {
+            .splash-inner {
+            font-size: 16px;
+            letter-spacing: 4px;
+                .page-title-main {
+                    &-one {
+                        position: relative;
+                        left: 5%;
+                        width: 85%;
+                    }
+                    &-two {
+                        bottom: 20px;
+                        left: 15%;
+                    }
+                }
+                .page-title-main-two::after {
+                    position: absolute;
+                    content: '';
+                    bottom: -10px;
+                    left: 40%;
+                    width: 20%;
+                    height: 3px;
+                    transform: translateX(-50%);
+                    background: $color-main;
+                }
+            }
+            .splash-discover {
+                h5 {
+                    font-weight: 100;
+                }
+                font-size: 14px;
+                letter-spacing: 4px;
+                color: $color-light; 
+            }
+
+        }
+    }
+    .product-text {
+        padding-left: 2px ;
+        
+    }
+    .section-header {
+        font-size: 22px;
     }
     .page-subtitle {
         font-size: 18px;
@@ -10,19 +74,6 @@
     .section-title {
         font-size: 24px;
         padding: 15px 0 0 20px;
-    }
-    .all-services {
-        flex-direction: column;
-    }
-    .services-description {
-        width: 100%;
-    }
-    .work-row {
-        flex-direction: column;
-    }
-    .contact .container {
-        flex-direction: column;
-        padding: 10px 10px 40px 30px;
     }
 }
 

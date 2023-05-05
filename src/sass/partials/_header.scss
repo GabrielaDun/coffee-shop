@@ -11,7 +11,7 @@
 
     .navigation {
         padding: 25px ;
-        letter-spacing: 5px;
+        letter-spacing: 4px;
         display: flex;
         justify-content: space-between;
         .logo {
@@ -39,7 +39,7 @@
         letter-spacing: 10px;
 
         .splash-inner {
-            font-size: 28px;
+            font-size: 24px;
             .page-title-main {
                 display: none;
                 &.active {
@@ -49,25 +49,24 @@
                 &-one {
                     position: relative;
                     left: 15%;
-                    width: 600px;
+                    width: 85%;
                 }
     
                 &-two {
                     position: relative;
-                    right: -350px;
-                    bottom: 50px;
-                    width: 550px;
+                    left: 38%;
+                    bottom: 40px;
+                    width: 85%;
                     }
-                   
             }
         
 
-            .page-title-main-one::after {
+            .page-title-main-two::after {
                 position: absolute;
                 content: '';
-                bottom: -74px;
-                left: 350px;
-                width: 200px;
+                bottom: -40px;
+                left: 20%;
+                width: 30%;
                 height: 5px;
                 transform: translateX(-50%);
                 background: $color-main;

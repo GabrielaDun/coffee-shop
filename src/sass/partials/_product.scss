@@ -2,14 +2,14 @@
 .product-header::after{
     position: absolute;
     content: '';
-    width: 400px;
+    width: 35%;
     height: 4px;
     top: 90px;        
     left: 36%;
     background: $color-main;
 }
 
-.product-component, .product-component{
+.product-component {
     display: none;
     &.active {
         display: inline;
