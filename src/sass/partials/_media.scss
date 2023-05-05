@@ -1,6 +1,9 @@
 /*Media*/
 
 @media (max-width: 757px) {
+    .section-header {
+        font-size: 22px;
+    }
     .nav-splash {
         .navigation {
             .logo{
@@ -40,14 +43,11 @@
                     }
                 }
                 .page-title-main-two::after {
-                    position: absolute;
-                    content: '';
                     bottom: -10px;
                     left: 40%;
                     width: 20%;
                     height: 3px;
                     transform: translateX(-50%);
-                    background: $color-main;
                 }
             }
             .splash-discover {
@@ -56,24 +56,68 @@
                 }
                 font-size: 14px;
                 letter-spacing: 4px;
-                color: $color-light; 
             }
 
         }
     }
-    .product-text {
-        padding-left: 2px ;
-        
+
+    .product-header::after{
+        width: 65%;
+        height: 3px;
+        top: 60px;        
+        left: 16%;
     }
-    .section-header {
-        font-size: 22px;
+
+    .product-component {
+        &.active {  
+            .product-row {
+                .product-text{
+                    padding-left: 2px;
+                    &-title{
+                        font-size: 16px;
+                        letter-spacing: 3px;
+                    }
+                    &::after {
+                        top: 70px;
+                    }
+                    &-description{
+                        font-size: 10px;
+                        left: 0px;
+                        bottom: 0px;
+                        width: 85%;
+                    }
+                    &-features{
+                        font-size: 10px;
+                    }
+                }
+                .product-image{
+                    .price {
+                        left: 88%;
+                        top: 38px;
+    
+                        &-old {                 
+                            font-size: 10px;
+                            left: 85%;
+                        }
+                        &-new {         
+    
+                            font-size: 14px;
+                        }
+    
+                    }
+                }
+            
+            }
+    
+        }
     }
-    .page-subtitle {
-        font-size: 18px;
+    .page-footer {
+        text-align: center;
+        font-size: 16px;
+        background-color: $color-light;
+        color: $color-dark;
     }
-    .section-title {
-        font-size: 24px;
-        padding: 15px 0 0 20px;
-    }
+    
+
 }
 
