@@ -31,39 +31,39 @@
     .main-carousel {
         margin-bottom: 120px;
         color: $color-light;
-    
-        .caurousel-cell {
+        .carousel-cell {
+            width: 0%;
+        }
+        .is-selected {
             display: flex;
             justify-content: space-between;
             flex-direction: row;
-        }
-    
-        &-image {
-            height: 185px;
-            width: 300px;
-        }
-    
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-    
-        &-text {
-            padding-left: 50px;
+            .main-carousel-image {
+                height: 195px;
+                width: 300px;
 
-        }
-        &-text h4 {
-            font-size: 18px;
-            font-weight: 400;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .main-carousel-text {
+                padding-left: 50px;
+                color: $color-light;
+                h4 {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                span {
+                    font-weight: 900;
+                }
+                p {
+                    padding-right: 60px;
+                }
+            }
         }
     
-        &-text span {
-            font-weight: 900;
-        }
-        &-text p {
-            padding-right: 60px;
-        }
     }    
 }
 

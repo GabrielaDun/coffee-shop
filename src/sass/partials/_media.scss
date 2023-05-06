@@ -39,7 +39,8 @@
                     }
                     &-two {
                         bottom: 20px;
-                        left: 15%;
+                        left: 22%;
+                        width: 80%;
                     }
                 }
                 .page-title-main-two::after {
@@ -131,6 +132,53 @@
             }
         }
     }
+
+
+    .about-us {
+        height: 580px;
+
+        .about-header::after{
+            width: 50%;
+            height: 3px;
+            top: 65px;        
+            left: 23%;
+        }
+
+        .main-carousel {
+        
+            .is-selected {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .main-carousel-image {
+                    height: 200px;
+                    width: 200px;
+                    display: flex;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        justify-content: center;
+                    }
+                }
+                .main-carousel-text {
+                    h4 {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                
+                    span {
+                        font-weight: 900;
+                    }
+                    p {
+                        padding-right: 60px;
+                    }
+                }
+            }
+        }    
+    }
+
 }
 
 
