@@ -28,43 +28,48 @@
             text-align: right;
         }
     }
-    .main-carousel {
-        margin-bottom: 120px;
-        color: $color-light;
-        .carousel-cell {
-            width: 0%;
-        }
-        .caurousel-cell.is-selected  {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            .main-carousel-image {
-                height: 195px;
-                width: 300px;
+    .home-slider {
+        padding: 10px 50px;
+        .main-carousel {
+            margin-bottom: 120px;
+            color: $color-light;
+            padding: 10px 30px;
 
-                img {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
+            .flickity-slider {
+                padding: 0 20px;
+
+                .carousel-cell {
+                    width: 0%;
+                }
+                .caurousel-cell.is-selected  {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    .main-carousel-image {
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .main-carousel-text {
+                        padding-left: 50px;
+                        h4 {
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                        span {
+                            font-weight: 900;
+                        }
+                        p {
+                            padding-right: 60px;
+                        }
+                    }
                 }
             }
-            .main-carousel-text {
-                padding-left: 50px;
-                color: $color-light;
-                h4 {
-                    font-size: 18px;
-                    font-weight: 400;
-                }
-                span {
-                    font-weight: 900;
-                }
-                p {
-                    padding-right: 60px;
-                }
-            }
-        }
-    
-    }    
+        }    
+    }
 }
 
 

@@ -144,35 +144,41 @@
             left: 23%;
         }
 
-        .main-carousel {
-        
-            .caurousel-cell.is-selected {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                .main-carousel-image {
-                    height: 200px;
-                    width: 200px;
-                    display: flex;
-                    img {
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
+        .home-slider {
+            padding: 10px 50px;
+            .main-carousel {
+                padding: 10px;
+                .flickity-slider {
+            
+                    .caurousel-cell.is-selected {
+                        display: flex;
+                        flex-direction: column;
                         justify-content: center;
-                    }
-                }
-                .main-carousel-text {
-                    h4 {
-                        font-size: 18px;
-                        font-weight: 400;
-                    }
-                
-                    span {
-                        font-weight: 900;
-                    }
-                    p {
-                        padding-right: 60px;
+                        align-items: center;
+                        .main-carousel-image {
+                            height: 200px;
+                            width: 200px;
+                            display: flex;
+                            img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: cover;
+                                justify-content: center;
+                            }
+                        }
+                        .main-carousel-text {
+                            h4 {
+                                font-size: 18px;
+                                font-weight: 400;
+                            }
+                        
+                            span {
+                                font-weight: 900;
+                            }
+                            p {
+                                padding-right: 60px;
+                            }
+                        }
                     }
                 }
             }
